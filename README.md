@@ -10,4 +10,5 @@ If you are using Big Bento Redux, the mod is already installed, intergrated and 
 
 ## Screenshots:
 ![img1](screenshot1.png)
+<br>The mod is useful for streaming & making videos as well!
 ![img2](screenshot2.png)
