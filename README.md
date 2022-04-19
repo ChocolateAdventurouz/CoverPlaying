@@ -4,7 +4,7 @@ CoverPlaying is a Winamp Big Bento Mod, which displays the title and the artwork
 
 
 ## News:
-A Bento (small) skin, will be available soon! Stay tuned ;)
+CoverPlaying support on Bento (small), will be available soon! Stay tuned ;)
 
 ## Installation
 
