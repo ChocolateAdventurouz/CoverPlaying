@@ -35,8 +35,13 @@ System.onScriptLoaded()
 loadmetadata()
 {
 	String METATITLE = System.getplayitemmetadatastring("title");
+	String NULLTitle = System.removePath(getPlayItemString());
 	sg_title.setXMLParam("text", METATITLE);
-
+	if (getplayitemmetadatastring("title") == "" || getplayitemmetadatastring("title") == NULL)
+	{
+		sg_title.setXMLParam("text", "Loading Metadata...");
+		sg_title.setXMLParam("text", NULLTitle);
+	}
 }
 System.onStop()
 {
