@@ -1,6 +1,10 @@
 # ⭐CoverPlaying
 
-Your current playing song's artwork but BIGGER. 
+CoverPlaying is a Winamp Big Bento Mod, which displays the title and the artwork, while a song is being played.
+
+
+## News:
+A Bento (small) skin, will be available soon! Stay tuned ;)
 
 ## Installation
 
