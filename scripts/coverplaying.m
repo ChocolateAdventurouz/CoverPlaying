@@ -5,7 +5,7 @@
 	 =========
    Metadata Transmitter
 
-	Version 1.0.0
+	Version 1.0.3
 
 Coded by: ChocolateAdventurouz
 Description: It obtains the song title and "transmits" it to the mod
@@ -35,12 +35,25 @@ System.onScriptLoaded()
 loadmetadata()
 {
 	String METATITLE = System.getplayitemmetadatastring("title");
+	String METARTIST = System.getplayitemmetadatastring("artist");
 	String NULLTitle = System.removePath(getPlayItemString());
-	sg_title.setXMLParam("text", METATITLE);
-	if (getplayitemmetadatastring("title") == "" || getplayitemmetadatastring("title") == NULL)
+
+	if (getplayitemmetadatastring("title") == "")
 	{
-		sg_title.setXMLParam("text", "Loading Metadata...");
-		sg_title.setXMLParam("text", NULLTitle);
+			sg_title.setXMLParam("text", "Loading Metadata...");
+			sg_title.setXMLParam("text", "Now Playing: " + NULLTitle);
+
+	}
+	else{
+		if (getplayitemmetadatastring("artist") != "")
+		{
+			sg_title.setXMLParam("text", "Loading Metadata...");
+			sg_title.setXMLParam("text", "Now Playing: " + METATITLE + " - With: " + METARTIST);
+		}
+		else{
+			sg_title.setXMLParam("text", "Loading Metadata...");
+			sg_title.setXMLParam("text", "Now Playing: " + METATITLE);
+		}
 	}
 }
 System.onStop()
